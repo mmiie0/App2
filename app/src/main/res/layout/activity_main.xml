@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- 상단 텍스트 -->
+    <TextView
+        android:id="@+id/textViewTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="문구"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"/>
+
+    <!-- 음성 업로드 버튼 -->
+    <Button
+        android:id="@+id/buttonUploadAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="음성 업로드"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- 선택된 음성 파일 정보 표시 텍스트뷰 -->
+    <TextView
+        android:id="@+id/textViewSelectedAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택된 음성 파일 없음"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- 음성 분석 버튼 -->
+    <Button
+        android:id="@+id/buttonAnalyzeAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="음성 분석"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:enabled="false"/> <!-- 초기에는 비활성화 -->
+
+    <!-- 하단 텍스트 -->
+    <TextView
+        android:id="@+id/textViewBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="문구"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+</LinearLayout>
